@@ -1,0 +1,19 @@
+{
+  "name": "test-vercel",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service --openssl-legacy-provider",
+    "build": "vue-cli-service --openssl-legacy-provider build",
+    "start": "vue-cli-service --openssl-legacy-provider start",
+    "generate": "vue-cli-service --openssl-legacy-provider generate"
+  },
+  "dependencies": {
+    "core-js": "^3.25.3",
+    "nuxt": "^2.15.8",
+    "vue": "^2.7.10",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10"
+  },
+  "devDependencies": {}
+}
