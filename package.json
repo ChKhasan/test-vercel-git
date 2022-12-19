@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "vue-cli-service --openssl-legacy-provider",
-    "build": "vue-cli-service --openssl-legacy-provider build",
-    "start": "vue-cli-service --openssl-legacy-provider start",
-    "generate": "vue-cli-service --openssl-legacy-provider generate"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "core-js": "^3.25.3",
