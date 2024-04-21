@@ -1,21 +1,21 @@
 <template>
- <div>
-   <input
-                ref="codeInput"
-                type="number"
-                v-model="form.password"
-                placeholder="●●●●●●"
-                min="1"
-                @keyup.enter="onSubmit"
-                @input="onInput"
-              />
-   </div>
+  <div>
+    <input
+      ref="codeInput"
+      type="number"
+      v-model="form.password"
+      placeholder="●●●●●●"
+      min="1"
+      @keyup.enter="onSubmit"
+      @input="onInput"
+    />
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
-   data() {
+  name: "IndexPage",
+  data() {
     return {
       currentLang: 1,
       langList: [
@@ -55,15 +55,15 @@ export default {
       },
     };
   },
-   methods: {
+  methods: {
     onInput() {
-    if (this.form.password && this.form.password.toString().length > 6) {
-      this.form.password = parseInt(this.form.password.toString().slice(0, 6));
-    }
-       onSubmit() {
-     
+      if (this.form.password && this.form.password.toString().length > 6) {
+        this.form.password = parseInt(this.form.password.toString().slice(0, 6));
+      }
     },
+    onSubmit() {
+      
+    }
   },
-   }
-}
+};
 </script>
